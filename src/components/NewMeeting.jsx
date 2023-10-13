@@ -44,7 +44,7 @@ function NewMeeting() {
 
   const onSubmit = (data) =>{ console.log(data)
   alert("Metting Registed!")
-  navigate("/To-Do-App/#/")
+  navigate("")
   } 
   
     return (<form onSubmit={handleSubmit(onSubmit)} className="mt-11 ml-10 mr-10 flex gap-5 flex-col w-1/3"> 
