@@ -37,7 +37,7 @@ function NewTask() {
 
   const onSubmit = (data) =>{ 
   alert("Task Added!")
-  navigate("/",{
+  navigate("/To-Do-App/#/",{
     state: {
       data
     }

@@ -20,7 +20,7 @@ function App() {
           <Route path="/newtask" element={<NewTask />} />
         </Route>
       </Routes>
-      </HashRouter>
+    </HashRouter>
     </div>
   );
 }
