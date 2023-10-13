@@ -36,7 +36,7 @@ function Navlist() {
         <img className=" object-fill w-5 h-5 ml-3 mr-3" src="https://img.icons8.com/pastel-glyph/64/inbox--v2.png" alt=""></img>
         <h2 className=" font-Sofia-Pro-Light text-sm font-black mt-0.5">Inbox</h2>
         </div>}/>
-    <Tab sx={{alignItems: 'start',textTransform :"none"}} label= {<a href="/To-Do-App/today" className="flex flex-row w-full"> 
+    <Tab sx={{alignItems: 'start',textTransform :"none"}} label= {<a href="/#/today" className="flex flex-row w-full"> 
         <img className=" object-fill w-5 h-5 ml-3 mr-3" src="https://img.icons8.com/material-two-tone/24/star--v2.png" alt=""></img>
         <a className=" font-Sofia-Pro-Light text-sm font-black mt-0.5">Today</a>
         </a>}/>
@@ -59,9 +59,9 @@ function Navlist() {
     </Tabs>
     <Popper id={id} open={open} anchorEl={anchorEl} className='bg-primarylight w-[15rem] rounded-b-xl rounded-r-xl pl-4 pb-1'>
         <div className='flex flex-col'>
-            <a href='/To-Do-App/newmeeting' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>New Meeting</a>
+            <a href='/#/newmeeting' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>New Meeting</a>
             <div className=' bg-meetingtitle h-0.5'></div>
-            <a href='/To-Do-App/newtask' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>Add Task</a>
+            <a href='/#/newtask' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>Add Task</a>
         </div>
     </Popper>
     
