@@ -59,9 +59,9 @@ function Navlist() {
     </Tabs>
     <Popper id={id} open={open} anchorEl={anchorEl} className='bg-primarylight w-[15rem] rounded-b-xl rounded-r-xl pl-4 pb-1'>
         <div className='flex flex-col'>
-            <a href='/newmeeting' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>New Meeting</a>
+            <a href='#/newmeeting' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>New Meeting</a>
             <div className=' bg-meetingtitle h-0.5'></div>
-            <a href='/newtask' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>Add Task</a>
+            <a href='#/newtask' className=' font-Sofia-Pro-Light text-primary p-1 hover:text-secondary hover:cursor-pointer'>Add Task</a>
         </div>
     </Popper>
     
