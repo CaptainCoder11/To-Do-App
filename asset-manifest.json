@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/To-Do-App/static/css/main.98a4476b.css",
-    "main.js": "/To-Do-App/static/js/main.66d9b7db.js",
+    "main.css": "/To-Do-App/static/css/main.d0b49b59.css",
+    "main.js": "/To-Do-App/static/js/main.c4f0ded2.js",
     "static/js/787.55695bd7.chunk.js": "/To-Do-App/static/js/787.55695bd7.chunk.js",
     "static/media/SofiaProMedium.woff": "/To-Do-App/static/media/SofiaProMedium.c4e6d42592d5d49c4030.woff",
     "static/media/SofiaProRegular.woff": "/To-Do-App/static/media/SofiaProRegular.081d8f0408bc6c2fcf21.woff",
     "static/media/SofiaProLight.woff": "/To-Do-App/static/media/SofiaProLight.85954286ddf6cb70bd5c.woff",
     "static/media/SofiaProUltraLight.woff": "/To-Do-App/static/media/SofiaProUltraLight.7fc09ee92366bb815b00.woff",
     "index.html": "/To-Do-App/index.html",
-    "main.98a4476b.css.map": "/To-Do-App/static/css/main.98a4476b.css.map",
-    "main.66d9b7db.js.map": "/To-Do-App/static/js/main.66d9b7db.js.map",
+    "main.d0b49b59.css.map": "/To-Do-App/static/css/main.d0b49b59.css.map",
+    "main.c4f0ded2.js.map": "/To-Do-App/static/js/main.c4f0ded2.js.map",
     "787.55695bd7.chunk.js.map": "/To-Do-App/static/js/787.55695bd7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98a4476b.css",
-    "static/js/main.66d9b7db.js"
+    "static/css/main.d0b49b59.css",
+    "static/js/main.c4f0ded2.js"
   ]
 }
