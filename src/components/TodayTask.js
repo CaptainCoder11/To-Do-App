@@ -50,7 +50,7 @@ function TodayTask() {
         <Card variant="outlined" className=' p-10 shadow-xl shadow-prinary'>
         <h1 className="font-Sofia-Pro-Medium font-black text-3xl ml-4">Today Task</h1>
     <Tabs
-        className=' mt-4'
+        className='mt-4'
         variant="scrollable"
         scrollButtons={false}
         value={value}
@@ -74,15 +74,15 @@ function TodayTask() {
         </div>}/>
     </Tabs>
     </Card>
-    {tasks ? <div className='mt-7 overflow-y-auto sm:h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[30rem] 2xl:h-[35rem]'>
+    {tasks ? <div className='mt-7 overflow-y-auto sm:h-[15rem] md:h-[20rem] lg:h-[25rem] xl:h-[35rem] 2xl:h-[40rem]'>
        {tasks.map((item, index) => (
-    <div className=' flex flex-row m-7'>
+    <div className=' flex flex-row m-7 w-full'>
         <h1 className=' font-Sofia-Pro-Light font-black text-xl capitalize'>{item.title}</h1>
         {
             item.completed ?  <h1 className='flex ml-auto max-h-[3rem] flex-wrap h-7 mr-10 font-Sofia-Pro-Light text-sm  pl-2 pr-2 pt-1  bg-primarylight text-primary rounded-full'>Completed</h1> : <h1 className='flex flex-wrap max-h-[2rem] min-w-[5rem] ml-auto mr-10 font-Sofia-Pro-Light text-sm text-center pt-1 pl-1 pr-1 bg-secondarylight text-secondary rounded-full'>In Progress</h1>
         }
     </div>
-))}
+    ))}
     </div> : <h1 className='font-Sofia-Pro-Medium mt-16 text-5xl ml-auto mr-auto'>No Tasks Found!</h1>}
     </div>);
 }

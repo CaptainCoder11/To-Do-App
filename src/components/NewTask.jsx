@@ -14,7 +14,6 @@ function NewTask() {
       yup.string()
       .nullable()
       .test("date", "Enter A Valid Date", function (value) {
-        console.log(moment().diff(moment(value, "YYYY-MM-DD"), "days"))
         return moment().diff(moment(value, "YYYY-MM-DD"), "days") <= 0;
       })
       .required("Please Enter A Date"),
@@ -31,8 +30,8 @@ function NewTask() {
       .required("Invalid Time")
   })
   .required();
-  const { register, handleSubmit} = useForm(
-    {resolver: yupResolver(schema)}
+  const { register, handleSubmit , formState: { errors }} = useForm(
+    {resolver: yupResolver(schema)},
   );
 
   const onSubmit = (data) =>{ 
@@ -50,16 +49,20 @@ function NewTask() {
       placeholder="Task Name"
       {...(register('name'))}
       ></input>
+      <p className=" font-Sofia-Pro-Light text-sm text-red-500">{errors.name?.message}</p>
+
       <label className=" font-Sofia-Pro-Regular text-primary">Select Start Date</label>
       <input type="date" 
       placeholder="Select A Date"
       {...(register('date'))}
       ></input>
+      <p className=" font-Sofia-Pro-Light text-sm text-red-500">{errors.date?.message}</p>
       <label className=" font-Sofia-Pro-Regular text-primary">Select Start Time</label>
       <input type="time" 
       placeholder="Start Time"
       {...(register('time'))}
       ></input>
+      <p className=" font-Sofia-Pro-Light text-sm text-red-500">{errors.time?.message}</p>
       <button type="submit" className=" bg-primary text-white font-Sofia-Pro-Regular p-4 rounded-xl">Add Task</button>
     </form>);
 }
